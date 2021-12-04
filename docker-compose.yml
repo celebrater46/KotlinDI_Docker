@@ -16,7 +16,8 @@ services:
 
   # Kotlin
   Kotlin-DI:
-    image: amazoncorretto
+#    image: amazoncorretto
+    image: ubuntu
     container_name: kotlin_DI
     tty: true
     volumes:
