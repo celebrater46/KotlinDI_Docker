@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+#  # Kotlin
+#  Kotlin-DI:
+#    container_name: Kotlin_DI
+#    build:
+#      context: ./src
+#      dockerfile: Dockerfile
+#    tty: true
+#    volumes:
+#      - ./src/kotlin_lessons:/var/kotlin_lessons
+#    ports:
+#      - "8080:80"
+#    network_mode: "sample-network5"
+
+  # Kotlin
+  Kotlin-DI:
+    image: amazoncorretto
+    container_name: kotlin_DI
+    tty: true
+    volumes:
+      - ./src/kotlin_lessons:/var/kotlin_lessons
+    ports:
+      - "8080:80"
+    network_mode: "sample-network5"
+
+networks:
+  sample-network5:
